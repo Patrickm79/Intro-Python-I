@@ -6,6 +6,10 @@
 
 # YOUR CODE HERE
 
+def f1(x, y):
+    sum = x + y
+    return sum
+
 print(f1(1, 2))
 
 # Write a function f2 that takes any number of integer arguments and returns the
@@ -13,6 +17,9 @@ print(f1(1, 2))
 # Note: Google for "python arbitrary arguments" and look for "*args"
 
 # YOUR CODE HERE
+
+def f2(*argv):
+    return sum(argv)
 
 print(f2(1))                    # Should print 1
 print(f2(1, 3))                 # Should print 4
@@ -22,7 +29,8 @@ print(f2(7, 9, 1, 3, 4, 9, 0))  # Should print 33
 a = [7, 6, 5, 4]
 
 # How do you have to modify the f2 call below to make this work?
-print(f2(a))    # Should print 22
+
+print(f2(range(a)))   # Should print 22
 
 # Write a function f3 that accepts either one or two arguments. If one argument,
 # it returns that value plus 1. If two arguments, it returns the sum of the
