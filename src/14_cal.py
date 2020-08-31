@@ -31,6 +31,8 @@ import sys
 import calendar
 from datetime import date
 
+#TODO: Add functionality for user input or if no input display current Date
+
 # Month and Year from sys args
 month = None
 year = None
