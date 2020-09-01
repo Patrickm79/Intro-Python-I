@@ -18,4 +18,7 @@ print("x is %d, y is %f, z is %s" % (x, y, z))
 
 txt = "x is {fx}, y is {fy}, z is {fz}".format(fx = x, fy = y, fz = z)
 print(txt)
+
 # Finally, print the same thing using an f-string
+
+print(f"x is {x}, y is {y}, z is {z}")
